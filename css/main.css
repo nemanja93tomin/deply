@@ -1,6 +1,9 @@
 *:focus {
   outline: none !important;
 }
+/**
+novi komentar
+*/
 * {
   margin: 0;
   -webkit-print-color-adjust: exact !important;
