@@ -1,10 +1,8 @@
 *:focus {
-  outline: none !important;
+  outline: none;
 }
 * {
   margin: 0;
-  -webkit-print-color-adjust: exact !important;
-  color-adjust: exact !important;
 }
 html {
   box-sizing: border-box;
@@ -97,12 +95,6 @@ a:active {
   width: 100%;
   height: auto;
 }
-@media (min-width: 1600px) {
-  .container {
-    width: 1570px;
-    max-width: 1570px;
-  }
-}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .media-checker {
@@ -131,18 +123,6 @@ a:active {
 @media only screen and (max-width: 767px) {
   .media-checker {
     z-index: 767;
-  }
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width: 567px) {
-  .media-checker {
-    z-index: 567;
-  }
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width: 566px) {
-  .media-checker {
-    z-index: 566;
   }
 }
 /* Extra Small Devices, Phones */
@@ -188,13 +168,52 @@ body {
   height: 200px;
 }
 .center-wrapper .bespoke {
-  background-color: blue;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 479px;
+  align-items: center;
 }
-.center-wrapper .about {
+.center-wrapper .bespoke .logo-container {
+  order: 1;
+}
+.center-wrapper .bespoke .text-container-1 {
+  order: 2;
+  text-transform: uppercase;
+  /*font-size: 2.1875vw;*/
+  font-size: 35px;
+  padding: 90px 0 58px 0;
+  margin: 0;
+  text-align: center;
+}
+.center-wrapper .bespoke .button-container {
+  order: 3;
+  height: 65px;
+  width: 340px;
+  border: 1px solid #393835;
+  background-color: white;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-wrapper .bespoke .button-container:hover,
+.center-wrapper .bespoke .button-container:focus,
+.center-wrapper .bespoke .button-container:active {
+  color: white;
+  background-color: #333333;
+}
+.center-wrapper .text-container-2 {
+  order: 4;
+  font-size: 16px;
+  margin: 12px 0 0 0;
+}
+.about {
   background-color: green;
 }
-.center-wrapper .about .red {
+.about .red {
   background-color: red;
   display: block;
   max-width: 100%;
@@ -202,15 +221,15 @@ body {
   width: auto;
   height: auto;
 }
-.center-wrapper .products {
+.products {
   background-color: purple;
   height: 200px;
 }
-.center-wrapper .gallery {
+.gallery {
   background-color: skyblue;
   height: 200px;
 }
-.center-wrapper .call-to-action {
+.call-to-action {
   background-color: gray;
   height: 200px;
 }
@@ -232,6 +251,11 @@ body {
 /*Ipad Landscape */
 /*Ipad Portrait*/
 /* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .bespoke .text-container-1 {
+    font-size: 25px !important;
+  }
+}
 /* Extra Small Devices, Phones */
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 479px) {
