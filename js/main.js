@@ -15,9 +15,9 @@
     // footerContainer.load('footer.html');
 
     $('#contact-form').on('submit', function(event) {
-        event.preventDefault(); // to stop the page refresh before form submitting
-        var user = {
-            name    : $('#name').value,
+        event.preventDefault();
+        let user = {
+            name    : document.getElementById('name').value,
             lastName: $('#lastname').value,
             email   : $('#email').value,
             message : $('#message').value
