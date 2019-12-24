@@ -380,7 +380,7 @@ body {
   color: #fff;
 }
 .center-wrapper .call-to-action .download-wrapper,
-.center-wrapper .call-to-action .mail-wraper {
+.center-wrapper .call-to-action .mail-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -494,6 +494,12 @@ body {
   .center-wrapper .about .article-content .article-wrapper .article-inner {
     padding: 0 20px 40px;
   }
+  .center-wrapper .about .article-content .icons .icons-wrapper {
+    padding: 0;
+  }
+  .center-wrapper .about .article-content .icons .icons-wrapper .icons-inner {
+    margin-right: 50px;
+  }
 }
 /*Ipad Landscape */
 /*Ipad Portrait*/
@@ -504,6 +510,19 @@ body {
   }
   .center-wrapper .about .article-content .article-wrapper .article-inner {
     width: 100%;
+  }
+  .center-wrapper .about .article-content .icons .icons-wrapper {
+    margin-bottom: 100px;
+  }
+  .center-wrapper .about .article-content .icons .icons-wrapper .icons-inner {
+    margin-right: 0;
+  }
+  .center-wrapper .about .article-content .icons .icons-wrapper .icons-inner .icons-paragraph p {
+    margin-bottom: 25px;
+  }
+  .center-wrapper .call-to-action .download-wrapper,
+  .center-wrapper .call-to-action .mail-wrapper {
+    margin-bottom: 100px;
   }
   .center-wrapper .contact-form .contact-title p {
     padding: 0 20px;
@@ -545,7 +564,7 @@ body {
     width: 290px;
   }
   .center-wrapper .call-to-action .download-wrapper,
-  .center-wrapper .call-to-action .mail-wraper {
+  .center-wrapper .call-to-action .mail-wrapper {
     padding: 0;
   }
 }

@@ -282,7 +282,7 @@ body {
     }
 
     .download-wrapper,
-    .mail-wraper {
+    .mail-wrapper {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
@@ -430,6 +430,14 @@ body {
             padding: 0 20px 40px;
           }
         }
+        .icons{
+          .icons-wrapper{
+            padding: 0;
+            .icons-inner{
+              margin-right: 50px;
+            }
+          }
+        }
       }
     }
   }
@@ -459,6 +467,25 @@ body {
             width: 100%;
           }
         }
+        .icons{
+          .icons-wrapper{
+            margin-bottom: 100px;
+            .icons-inner{
+              margin-right: 0;
+              .icons-paragraph{
+                p{
+                  margin-bottom: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .call-to-action{
+      .download-wrapper, .mail-wrapper{
+        margin-bottom: 100px;
       }
     }
 
@@ -534,7 +561,7 @@ body {
       }
 
       .download-wrapper,
-      .mail-wraper {
+      .mail-wrapper {
         padding: 0;
       }
     }
