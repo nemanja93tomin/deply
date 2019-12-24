@@ -291,8 +291,45 @@ body {
   height: 200px;
 }
 .center-wrapper .gallery {
-  background-color: skyblue;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.center-wrapper .gallery .gallery-text-container .title {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  align-self: center;
+  order: 1;
+  margin-bottom: 100px;
+}
+.center-wrapper .gallery .gallery-text-container .title:before {
+  border-top: 1px solid #333;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.center-wrapper .gallery .gallery-text-container .title span {
+  background: #fff;
+  padding: 0 25px;
+}
+.center-wrapper .gallery .gallery-content-container {
+  display: flex;
+  order: 2;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.center-wrapper .gallery .gallery-content-container:last-child {
+  margin-bottom: 198px;
 }
 .center-wrapper .call-to-action {
   display: flex;
@@ -471,6 +508,9 @@ body {
   }
   .center-wrapper .contact-form .contact-inner form .contact-subject #message {
     margin-top: 15px;
+  }
+  .gallery .gallery-content-container:last-child {
+    margin-bottom: 50px !important;
   }
 }
 /* Extra Small Devices, Phones */
