@@ -17,10 +17,10 @@
     $('#contact-form').on('submit', function(event) {
         event.preventDefault();
         let user = {
-            name    : document.getElementById('name').value,
-            lastName: $('#lastname').value,
-            email   : $('#email').value,
-            message : $('#message').value
+            name    : $('#name').val(),
+            lastName: $('#lastname').val(),
+            email   : $('#email').val(),
+            message : $('#message').val()
         };
         console.log(user);
     });
