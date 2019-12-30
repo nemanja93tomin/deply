@@ -401,13 +401,103 @@ body {
 }
 
 .footer {
-  background-color: black;
-  height: 300px;
-
+  background-color: #161616;
   .center-wrapper {
     .footer-inner {
-      background-color: yellow;
-      height: 50px;
+      display: flex;
+      flex-direction: column;
+      .footer-logo-links-social-row {
+        display: flex;
+        align-items: center;
+        padding: 82px 0 82px;
+        filter: brightness(0) invert(1);
+        .logo-f {
+          flex-grow: 1;
+          a {
+            opacity: 1;
+            transition: .5s ease;
+            &:hover, &:focus, &:active {
+              opacity: 0.3;
+            }
+          }
+        }
+        .links-f {
+          flex-grow: 5;
+          ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            li {
+              list-style-type: none;
+              padding: 0 27px;
+              .josefinBold();
+              a {
+                font-size: 24px;
+                opacity: 1;
+                transition: .5s ease;
+                &:hover, &:focus, &:active {
+                  opacity: 0.3;
+                }
+              }
+            }
+          }
+        }
+        .social-f {
+          flex-grow: 1;
+          ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            li {
+              list-style-type: none;
+              a {
+                padding-left: 18px;
+                i {
+                  font-size: 50px;
+                  opacity: 1;
+                  transition: .5s ease;
+                  &:hover, &:focus, &:active {
+                    opacity: 0.3;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer-pay-row {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        ul {
+          display: flex;
+          filter: brightness(0) invert(1);
+          li {
+            list-style-type: none;
+            padding: 0 18px;
+            a {
+              opacity: 1;
+              img {
+                opacity: 1;
+                transition: .5s ease;
+                &:hover, &:focus, &:active {
+                  opacity: 0.3;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer-copyright-row {
+        font-size: 18px;
+        color: #424242;
+        .josefinBold();
+        display: flex;
+        justify-content: center;
+        padding: 97px 0 50px;
+      }
     }
   }
 }
@@ -536,6 +626,14 @@ body {
     }
   }
 
+  footer .footer .center-wrapper .footer-inner .footer-logo-links-social-row {
+    flex-direction: column;
+    padding: 25px 0;
+    .links-f{
+      padding: 25px 0;
+    }
+  }
+
 }
 
 /* Extra Small Devices, Phones */
@@ -572,6 +670,15 @@ body {
       }
     }
   }
+
+  //footer start
+  .links-f ul{
+    flex-direction: column;
+  }
+  .footer-pay-row ul{
+    flex-direction: column;
+  }
+  //footer end
 
 }
 
