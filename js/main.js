@@ -12,7 +12,7 @@
     let headerContainer = $('.head-content-wrapper');
     let footerContainer = $('.footer-content-wrapper');
 
-    headerContainer.load('header.html');
+    // headerContainer.load('header.html');
 
     // footerContainer.load('footer.html');
 
