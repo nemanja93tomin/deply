@@ -9,8 +9,10 @@
      * events
      */
 
-    var headerContainer = $('.head-content-wrapper');
-    var footerContainer = $('.footer-content-wrapper');
+    let headerContainer = $('.head-content-wrapper');
+    let footerContainer = $('.footer-content-wrapper');
+
+    headerContainer.load('header.html');
 
     // footerContainer.load('footer.html');
 
