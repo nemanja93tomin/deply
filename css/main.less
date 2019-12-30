@@ -26,13 +26,15 @@ body {
 }
 
 .hero {
-  height: 500px;
-  background-color: red;
-
+  background-image: url("../img/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 47%;
   .center-wrapper {
     .logo {
-      background-color: white;
-      height: 100px;
+      display: flex;
+      padding: 15px;
     }
   }
 }
@@ -452,6 +454,10 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+
+  .hero .center-wrapper .logo img{
+    width: 110px;
+  }
 
   .center-wrapper {
     .bespoke {
